@@ -1,0 +1,1 @@
+Remember(For God so loved the world, that he gave his only begotten Son, that whosoever believeth on him should not perish, but have eternal life. For God so loved the world, that He gave His only begotten Son, that whoever believes in Him should not perish, but have eternal life.)
