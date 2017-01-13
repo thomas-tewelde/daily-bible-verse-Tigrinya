@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>መዓልታዊ ጥቕሲ </ion-title>
+<!--መጽሓፍ ቅዱስ-->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="cards-bg">
+  <div class="date">{{notifyTime}}</div>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title class="geez_verse">
+        <b>
+          {{geez_verse}}
+        </b>
+
+      </ion-card-title>
+      <div class="geez_word" *ngIf="isError">{{geez_word}}</div>
+      <div *ngIf="!isError">
+        <ion-col>
+          <button ion-button (click)="refreshVerse()" clear large color="primary" icon-left>
+            <span  class="geez_word_error">Oops! Try again </span>
+            <ion-icon name="refresh" ></ion-icon>
+            <!--ጽቀጥ-->
+          </button>
+        </ion-col>
+      </div>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button (click)="share()" clear large color="primary" icon-left>
+          <ion-icon name="share-alt" ></ion-icon>
+          ኣካፍል
+        </button>
+      </ion-col>
+
+      <ion-col text-center>
+        <button ion-button clear large color="primary" (click)="setting()" icon-left>
+          <ion-icon name="alarm"></ion-icon>
+          መዘከሪ
+        </button>
+      </ion-col>
+
+      <!--<ion-col text-center>-->
+        <!--<button ion-button clear large color="primary" (click)="reminder()" icon-left>-->
+          <!--<ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" (ionChange)="timeChange($event)"></ion-datetime>-->
+          <!--<ion-icon name="alarm">-->
+            <!--Reminder-->
+          <!--</ion-icon>-->
+        <!--</button>-->
+      <!--</ion-col>-->
+
+    </ion-row>
+
+  </ion-card>
+  <!--<button ion-button (click)="showInterstitials()">Show Interstitial</button>-->
+
+</ion-content>

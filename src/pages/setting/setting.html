@@ -1,0 +1,49 @@
+<!--
+  Generated template for the Setting page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      መዘከሪ    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="cards-bg">
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>
+      </ion-card-title>
+      <div class="geez_word"></div>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col text-center>
+        <button ion-button clear large color="primary" (click)="setting()" icon-left>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="notifyTime" (ionChange)="timeChange($event)"></ion-datetime>
+          <ion-icon name="alarm"></ion-icon>
+          መዘከሪ
+        </button>
+      </ion-col>
+    </ion-row>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+  </ion-card>
+
+
+
+</ion-content>
+
+<ion-footer>
+
+  <button (click)="addNotifications()" ion-button color="primary" full>ኣዘክርኒ</button>
+  <button (click)="cancelAll()" ion-button color="danger" full>መዘከርታ ይደምሰስ</button>
+
+</ion-footer>
